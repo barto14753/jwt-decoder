@@ -1,6 +1,7 @@
 # JWT Decoder
 
-![Deployment](https://github.com/github/docs/actions/workflows/actions.yml/badge.svg)
+![Deployment](https://github.com/barto14753/jwt-decoder/actions/workflows/actions.yml/badge.svg)
+
 [![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)]()
 [![](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white)]()
 [![](https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white)]()
@@ -13,6 +14,10 @@ The JWT Decoder is a web application built with React and Material UI that allow
 
 - Decode JWTs: Enter a JWT and the application will decode it and display the header and payload information.
 - Encode to JWT: Update header and payload data to receive new JWT
+
+## Demo
+
+Check out the live demo of the JWT Decoder at [barto14753.github.io/jwt-decoder](https://barto14753.github.io/jwt-decoder).
 
 ## Usage
 
