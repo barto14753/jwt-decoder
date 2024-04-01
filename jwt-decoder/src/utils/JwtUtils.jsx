@@ -1,18 +1,22 @@
 const jwt = require("jsonwebtoken");
 
 const defaultSecret = "secret";
-const defaultJwt = {
+const defaultHeader = {
+  typ: "JWT",
+  alg: "HS512",
+};
+const defaultPayload = {
   sub: "1234567890",
   name: "John Doe",
   iat: 1516239022,
 };
 
 export const getDefaultJwt = () => {
-  return encodeJwt(defaultJwt, defaultSecret);
+  return encodeJwt(defaultHeader, defaultPayload, defaultSecret);
 };
 
-export const encodeJwt = (payload, secret) => {
-  return jwt.sign(payload, secret);
+export const encodeJwt = (header, payload, secret) => {
+  return jwt.sign(payload, secret, { header });
 };
 
 export const decodeJwt = (jwtString) => {
@@ -25,8 +29,9 @@ export const decodeJwt = (jwtString) => {
 
 export const verifyJwt = (jwtString, secret) => {
   try {
-    return jwt.verify(jwtString, secret);
+    jwt.verify(jwtString, secret);
+    return;
   } catch (error) {
-    return false;
+    return error;
   }
 };
