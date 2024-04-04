@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/jwt-decoder/static/css/main.c6001462.chunk.css",
-    "main.js": "/jwt-decoder/static/js/main.7a4dd86c.chunk.js",
-    "main.js.map": "/jwt-decoder/static/js/main.7a4dd86c.chunk.js.map",
+    "main.js": "/jwt-decoder/static/js/main.170b8ddf.chunk.js",
+    "main.js.map": "/jwt-decoder/static/js/main.170b8ddf.chunk.js.map",
     "runtime-main.js": "/jwt-decoder/static/js/runtime-main.812ddc83.js",
     "runtime-main.js.map": "/jwt-decoder/static/js/runtime-main.812ddc83.js.map",
     "static/js/2.f6988871.chunk.js": "/jwt-decoder/static/js/2.f6988871.chunk.js",
     "static/js/2.f6988871.chunk.js.map": "/jwt-decoder/static/js/2.f6988871.chunk.js.map",
     "index.html": "/jwt-decoder/index.html",
-    "precache-manifest.32bc00cf6014a0515ee75489bc6cff81.js": "/jwt-decoder/precache-manifest.32bc00cf6014a0515ee75489bc6cff81.js",
+    "precache-manifest.5210d702d1b9d582a008fdf69c04779e.js": "/jwt-decoder/precache-manifest.5210d702d1b9d582a008fdf69c04779e.js",
     "service-worker.js": "/jwt-decoder/service-worker.js",
     "static/css/main.c6001462.chunk.css.map": "/jwt-decoder/static/css/main.c6001462.chunk.css.map",
     "static/js/2.f6988871.chunk.js.LICENSE.txt": "/jwt-decoder/static/js/2.f6988871.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.812ddc83.js",
     "static/js/2.f6988871.chunk.js",
     "static/css/main.c6001462.chunk.css",
-    "static/js/main.7a4dd86c.chunk.js"
+    "static/js/main.170b8ddf.chunk.js"
   ]
 }
