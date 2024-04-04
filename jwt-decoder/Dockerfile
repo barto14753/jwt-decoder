@@ -1,4 +1,4 @@
-FROM node:18-alpine
+FROM node:20-alpine
 
 # Expose the port the app runs in
 EXPOSE 3000

@@ -21,7 +21,6 @@ Check out the live demo of the JWT Decoder at [barto14753.github.io/jwt-decoder]
 
 <img width="1507" alt="image" src="https://github.com/barto14753/jwt-decoder/assets/56938330/12606105-773b-4feb-be00-cdeb8f6160de">
 
-
 ## Usage
 
 To use the JWT Decoder, follow these steps:
@@ -30,3 +29,15 @@ To use the JWT Decoder, follow these steps:
 2. Install dependencies: `npm install`
 3. Start the development server: `npm start`
 4. Open your browser and navigate to `http://localhost:3000`
+
+## Docker
+
+You can also run the JWT Decoder using Docker. To do this, follow these steps:
+
+```
+# Build the Docker image
+docker build -t jwt-decoder .
+
+# Run the Docker container
+docker run -d -p 3000:3000 jwt-decoder
+```
