@@ -1,8 +1,12 @@
 import * as React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FilledInput, FormControl, Grid, InputLabel } from "@mui/material";
 
 export default function Encoded({ jwt, updateJwt }) {
+	useEffect(() => {
+		setData(jwt);
+	}, [jwt]);
+
 	const [data, setData] = useState(jwt);
 
 	const updateData = (data_) => {
