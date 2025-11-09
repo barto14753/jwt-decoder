@@ -8,12 +8,24 @@
 
 ## Project Description
 
-The JWT Decoder is a web application built with React and Material UI that allows you to decode JSON Web Tokens (JWTs). It provides a user-friendly interface for decoding JWTs and displaying their contents.
+The JWT Decoder is a web application built with React and Material UI that allows you to decode and verify JSON Web Tokens (JWTs). It provides a user-friendly interface for decoding JWTs, displaying their contents, and verifying signatures using various key formats.
 
 ## Features
 
-- Decode JWTs: Enter a JWT and the application will decode it and display the header and payload information.
-- Encode to JWT: Update header and payload data to receive new JWT
+- **Decode JWTs**: Enter a JWT and the application will decode it and display the header and payload information.
+- **Encode to JWT**: Update header and payload data to receive new JWT
+- **JWT Verification**: Verify JWT signatures using different key formats:
+  - Public Key (PEM format)
+  - JWK (JSON Web Key)
+  - JWKS (JSON Web Key Set) endpoint
+  - X.509 Certificates
+  - Default application certificate
+- **Key Management**: Load verification keys from:
+  - Text input
+  - File upload (.pem, .crt, .key, .pub, .json, .jwk)
+  - Remote JWKS endpoints
+- **Multiple Algorithms**: Support for HMAC (HS256, HS384, HS512) and RSA (RS256, RS384, RS512) algorithms
+- **Real-time Validation**: Live verification status with detailed error messages
 
 ## Demo
 
@@ -26,9 +38,26 @@ Check out the live demo of the JWT Decoder at [barto14753.github.io/jwt-decoder]
 To use the JWT Decoder, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/barto14753/jwt-decoder.git`
-2. Install dependencies: `npm install`
-3. Start the development server: `npm start`
-4. Open your browser and navigate to `http://localhost:3000`
+2. Navigate to project directory: `cd jwt-decoder/jwt-decoder`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm start`
+5. Open your browser and navigate to `http://localhost:3000/jwt-decoder`
+
+### JWT Verification
+
+The application includes comprehensive JWT verification capabilities:
+
+#### Default Verification
+
+- Uses the application's built-in certificate for RS256 tokens
+- Falls back to "secret" for HMAC tokens
+
+#### Loading Verification Keys
+
+1. **Public Key**: Paste or upload a PEM-formatted public key
+2. **JWK**: Enter a JSON Web Key in JSON format
+3. **JWKS Endpoint**: Provide a URL to a JWKS endpoint (e.g., `https://domain.com/.well-known/jwks.json`)
+4. **Certificate**: Upload an X.509 certificate (.pem, .crt format)
 
 ## Docker
 

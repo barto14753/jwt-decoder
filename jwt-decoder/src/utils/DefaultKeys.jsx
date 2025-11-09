@@ -1,0 +1,51 @@
+// Domyślny klucz prywatny RSA dla aplikacji (tylko do celów demonstracyjnych)
+export const DEFAULT_PRIVATE_KEY = `-----BEGIN PRIVATE KEY-----
+MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDxxwHWN0pM+Q5e
+hYj0LiEMJxJnTpvrCAcWTNbVV1PJOvzOYK4d6dOmf1guUF3I23UGmAKmmRUaxNPH
++WaBYnEaPFBs40KQZoc97HuWeXYMZz1mIZ8OUeRukJDqC0SXx6R3lCkazBExDJJ7
+0cO37oZ0Ju+GtwPgUe/55pa3IZ+OcVZgx3sG+HzZffbCpC8kDyCuSKN2449itJQc
+fi+CjFaOPJ+/PwwuM6L596VPZmKbYhjysC4fGBmhvZw391wpOt3yAdTNAmmNdqgI
+CxqwJv8EHXENUx6RdyX/P1tZgIkwySBMZnVgHKwEhfJDTrV7zRP7JwKC0sYipmOc
+tPCKeVs3AgMBAAECggEAD1L3hdYZSnzapH9xz70AvgSkwPfiUzVxPybKbKYAgUrQ
+04/P8vg4DV+y47SXGfAqIBHdN4v3Iqw1zbRVnLInMwXk0kUqzRY1tv7YuNykvWKD
+XLuZMwIm9VVww4GVUzCfKi9+b3YrSZP5BAoM9DwVBe88OhCgst4R1Ls0JquysW3U
+BQq8rqFdL4ntIwC66koknEkr+ZpxOL0n/r4WZeEUaGAc/gDubnMsJhmKdCdjdtib
+z32fNf91ckRP6ot5QpK4usg7jIDQkLpEmrAKLh9bT2NbN+E2u0U1DX428n7bf4g9
+6UCSOM8Nj2jPHtiVkELEapHWNWUkfWZSjSRosFwnAQKBgQD7towCeOnjFQD3wksx
+ZpyVam4lkygxapKnFCiAqiVc+VFsoVO5ts+Smh0yVmQlpFaEKuFupdEzVnkv4zNN
+5vrAVaSJHkWGsRw09zTdWarwV5cxuOTzYM4zOZpXZd9P8FFF1GSM1Q3XDUqEHnb0
+TjtKrkYjarAiOh4AIOqdQb7rtwKBgQD15SQnmW5fiGqdAE54QodCCL0gmFth6i5H
+23NOYjPtZnEpTFG5kzXnJtCqQvZnbRmLCWrQdTR+eeY6eyMzRWUM8Id0fF0L++sW
+c1HEaL5O0njl2koW8gwdwllxHehrW6BOC2KW5YbQ0gJjuZl+vN094lQiQczoQolz
+oHArq4gMgQKBgARuqHR6sJOhEQ1LzIsoJWW0JBBhUPndyItMnZH2bQYAFeD1zkWc
+5HbOY+k5ADZxeFyHbMTIArEGusePFp4ujQfJ+kW31L2UbMy59aJYK9xjjnP/r3hh
+of/g6cjUMGR19Nhn7wVT0xSQVVmSN8IBhqW//9grzsIrh8+0xKzUNYptAoGAH9Ic
+YKeBWgmMSm78uKFbYZdB6lLtGHm2rYPfoxggQiuMn1yKAurjAdvLCw2JV48NzClW
+0k0okulxesXuozbqwcbqsI9bdy6NmKUpwrIPVqH0FUKvbdK68Kry6imFp0b/MrpU
+ctSXIrTarE8bZwRH2TdNzfUX8EKUCQuNGImlHIECgYEAvnAwQLnUAHf2/KkEKmTM
+5VMnzjgcEUkpoeUOTzWdU7bU0mHXBifrSLXZ5X8nzp8QsyOEVF8sN6bvcMkH65eM
+zakMaS07kSFAg8pnIhUXzERO6kiMrWZoEL2mA/1bzj/waZSG+Sy2/HSHWjNJ/hSQ
+togrjNG2fRCXvEAFna+osXs=
+-----END PRIVATE KEY-----`;
+
+// Odpowiadający klucz publiczny
+export const DEFAULT_PUBLIC_KEY = `-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8ccB1jdKTPkOXoWI9C4h
+DCcSZ06b6wgHFkzW1VdTyTr8zmCuHenTpn9YLlBdyNt1BpgCppkVGsTTx/lmgWJx
+GjxQbONCkGaHPex7lnl2DGc9ZiGfDlHkbpCQ6gtEl8ekd5QpGswRMQySe9HDt+6G
+dCbvhrcD4FHv+eaWtyGfjnFWYMd7Bvh82X32wqQvJA8grkijduOPYrSUHH4vgoxW
+jjyfvz8MLjOi+felT2Zim2IY8rAuHxgZob2cN/dcKTrd8gHUzQJpjXaoCAsasCb/
+BB1xDVMekXcl/z9bWYCJMMkgTGZ1YBysBIXyQ061e80T+ycCgtLGIqZjnLTwinlb
+NwIDAQAB
+-----END PUBLIC KEY-----`;
+
+// Domyślny JWK (JSON Web Key)
+export const DEFAULT_JWK = {
+  "kty": "RSA",
+  "kid": "default-key-id",
+  "n": "8ccB1jdKTPkOXoWI9C4hDCcSZ06b6wgHFkzW1VdTyTr8zmCuHenTpn9YLlBdyNt1BpgCppkVGsTTx_lmgWJxGjxQbONCkGaHPex7lnl2DGc9ZiGfDlHkbpCQ6gtEl8ekd5QpGswRMQySe9HDt-6GdCbvhrcD4FHv-eaWtyGfjnFWYMd7Bvh82X32wqQvJA8grkijduOPYrSUHH4vgoxWjjyfvz8MLjOi-felT2Zim2IY8rAuHxgZob2cN_dcKTrd8gHUzQJpjXaoCAsasCb_BB1xDVMekXcl_z9bWYCJMMkgTGZ1YBysBIXyQ061e80T-ycCgtLGIqZjnLTwinlbNw",
+  "e": "AQAB",
+  "use": "sig",
+  "key_ops": ["verify"],
+  "alg": "RS256"
+};
