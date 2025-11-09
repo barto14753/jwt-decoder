@@ -31,7 +31,7 @@ The JWT Decoder is a web application built with React and Material UI that allow
 
 Check out the live demo of the JWT Decoder at [barto14753.github.io/jwt-decoder](https://barto14753.github.io/jwt-decoder).
 
-<img width="1507" alt="image" src="https://github.com/barto14753/jwt-decoder/assets/56938330/12606105-773b-4feb-be00-cdeb8f6160de">
+<img width="2880" height="4870" alt="screencapture-localhost-3000-jwt-decoder-2025-11-09-11_54_41" src="https://github.com/user-attachments/assets/2a8414b2-8788-4d62-9aad-2d26b2488924" />
 
 ## Usage
 
